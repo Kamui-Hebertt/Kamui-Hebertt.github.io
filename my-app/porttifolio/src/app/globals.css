@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.divBack{
+  background-image: url("../../public/net.jpg");
+  width: 100%;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+
+
+
+.translated-div1 {
+  width: 10px;
+  height: 10px;
+  z-index: 0;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  animation: translated-div 2.5s ease infinite;
+}
+
+
+@keyframes translated-div {
+  0% {
+    transform: translateY(0);
+  }
+ 50% {
+    transform: translateY(30px) 
+  }
+
+  
+}
+/* scroll down */
+my-text {
+  /* add these styles to make the text move smoothly */
+  display: inline-block;
+  animation: slide-left 0.5s ease forwards;
+}
+
+@keyframes slide-left {
+
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+  
+    transform: translateX(-10px);
+  }
+}
+
+ /* keyframes */
+
+ /* .hidden {
+  opacity:0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+ }
+
+
+ .show {
+  opacity: 1;
+  filter: blur(0);
+  transform:translateX(0);
+ } */
+
+ /* @media(prefer-reduced-motion){
+  .hidden{
+    transition:none;
+  }
+ } */
+
+
+
+ .primary {
+  animation: primary 3s linear infinite;
+}
+
+.secondary {
+  animation: secondary 3s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+ 
+
+nav {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+
+
+  
+}
